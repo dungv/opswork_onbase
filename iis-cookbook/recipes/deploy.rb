@@ -22,7 +22,7 @@ ruby_block "download-object" do
     s3_client = Aws::S3::Client.new(region: s3region)
     s3_client.get_object(bucket: s3bucket,
                          key: s3filename,
-                         response_target: 'C:\inetpub\wwwroot\default.htm')
+                         response_target: 'C:\inetpub\wwwroot\onbase\default.htm')
   end 
   action :run
 end
