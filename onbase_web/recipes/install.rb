@@ -4,7 +4,7 @@ directory 'C:\tmp' do
   action :create
 end
 
-cookbook_file 'C:\tmp\Hyland.Web.Server.17.msi' do
+remote_file 'C:\tmp\Hyland.Web.Server.17.msi' do
   source 'https://github.com/dungv/opswork_onbase/releases/download/onbaseweb/Hyland.Web.Server.17.msi'
   rights :full_control, 'Everyone'
   action :create
