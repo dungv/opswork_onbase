@@ -17,9 +17,12 @@ remote_file 'C:\tmp\setup.exe' do
 end
 
 
-
+windows_package 'onbasesetup' do
+  source 'C:\tmp\setup.exe'
+  action :install
+end
 
 windows_package 'onbaseweb' do
-  source 'C:\tmp\setup.exe'
+  source 'C:\tmp\Hyland.Web.Server.17.msi'
   action :install
 end
