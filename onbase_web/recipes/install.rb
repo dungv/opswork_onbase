@@ -33,10 +33,10 @@ end
 #  action :install
 #end
 
-windows_package 'dot net' do
-  source 'C:\tmp\NDP472-KB4054530-x86-x64-AllOS-ENU.exe'
-  action :install
-end
+#windows_package 'dot net' do
+#  source 'C:\tmp\NDP472-KB4054530-x86-x64-AllOS-ENU.exe'
+#  action :install
+#end
 
 
 windows_package 'onbaseweb' do
