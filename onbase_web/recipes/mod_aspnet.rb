@@ -18,8 +18,8 @@
 # limitations under the License.
 #
 
-include_recipe 'iis'
-include_recipe 'iis::mod_isapi'
+# include_recipe 'iis'
+# include_recipe 'iis::mod_isapi'
 
 windows_feature %w(IIS-NetFxExtensibility IIS-ASPNET) do
   action :install
