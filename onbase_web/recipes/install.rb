@@ -17,7 +17,7 @@ remote_file 'C:\tmp\setup.exe' do
 end
 
 execute 'setup onbase web' do
-  source 'setup.exe'
+  command 'C:\tmp\setup.exe'
   cwd 'C:\tmp'
 end
 
