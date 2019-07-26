@@ -12,5 +12,6 @@ end
 
 windows_package 'onbaseapp' do
   source 'C:\tmp\Hyland.Application.Server.17.x86.msi'
-  action :install
+  installer_type :custom
+  options '/Q'
 end
