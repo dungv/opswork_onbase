@@ -4,13 +4,13 @@ directory 'C:\tmp' do
   action :create
 end
 
-remote_file 'C:\tmp\Hyland.Web.Server.17.msi' do
-  source 'https://github.com/dungv/opswork_onbase/releases/download/onbaseweb/Hyland.Web.Server.17.msi'
+remote_file 'C:\tmp\Hyland.Application.Server.17.x86.msi' do
+  source 'https://github.com/dungv/opswork_onbase/releases/download/onbaseweb/Hyland.Application.Server.17.x86.msi'
   rights :full_control, 'Everyone'
   action :create
 end
 
 windows_package 'onbaseapp' do
-  source 'C:\tmp\Hyland.Web.Server.17.msi'
+  source 'C:\tmp\Hyland.Application.Server.17.x86.msi'
   action :install
 end
