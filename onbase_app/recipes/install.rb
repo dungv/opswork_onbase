@@ -10,8 +10,13 @@ remote_file 'C:\tmp\Hyland.Application.Server.17.x86.msi' do
   action :create_if_missing
 end
 
-windows_package 'onbaseapp' do
-  source 'C:\tmp\Hyland.Application.Server.17.x86.msi'
-  installer_type :custom
-  options '/Q'
+#windows_package 'onbaseapp' do
+#  source 'C:\tmp\Hyland.Application.Server.17.x86.msi'
+#  installer_type :custom
+#  options '/Q'
+#end
+
+execute  'onbaseapp' do
+  command 'msiexec /qn /i "c:\tmp\hyland.application.server.17.x86.msi'
+  elevated true
 end
