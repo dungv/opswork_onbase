@@ -18,5 +18,5 @@ end
 
 execute  'onbaseapp' do
   command 'msiexec /qn /i "c:\tmp\hyland.application.server.17.x86.msi'
-  elevated true
+  elevated :true
 end
